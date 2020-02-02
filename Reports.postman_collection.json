@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "e025f971-a02f-4b94-ab51-59b37ed69009",
+		"name": "Reports",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllReports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reportapi-ba.azurewebsites.net/api/Reports/",
+					"protocol": "https",
+					"host": [
+						"reportapi-ba",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Reports",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReport Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n {\r\n   \"ATR12\": 1,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 2,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 3,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 4,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 5,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 6,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 7,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 8,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 9,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 10,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n },\r\n {\r\n   \"ATR12\": 11,\r\n   \"CDI2\": 11,\r\n   \"ATR3\": 45\r\n }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reportapi-ba.azurewebsites.net/api/Reports/THIRD_R",
+					"protocol": "https",
+					"host": [
+						"reportapi-ba",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Reports",
+						"THIRD_R"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReport",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reportapi-ba.azurewebsites.net/api/Reports/THIRD_R",
+					"protocol": "https",
+					"host": [
+						"reportapi-ba",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Reports",
+						"THIRD_R"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReport Copy Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://reportapi-ba.azurewebsites.net/api/Reports/THIRD_R",
+					"protocol": "https",
+					"host": [
+						"reportapi-ba",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"Reports",
+						"THIRD_R"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
